@@ -13,7 +13,7 @@ const NewLinkform = () => {
   const [error, setError] = useState('')
 
   const createdLink = useMemo(() => {
-    return `${process.env.NEXT_PUBLIC_DOMAIN}/${slug} -> ${longUrl || '...'}`
+    return `${process.env.NEXT_PUBLIC_LINK_DOMAIN}/${slug} -> ${longUrl || '...'}`
   }, [slug, longUrl])
 
   const handleLongUrlChange = (event) => {
